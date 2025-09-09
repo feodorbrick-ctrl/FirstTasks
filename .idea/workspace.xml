@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d7f8542-fe54-45b6-baf0-fd255822268e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2xDp3ts3UEYxhJCpyQj6A8MTbDp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.Parity.js.executor": "Run",
+    "Node.js.ascendingOrder.js.executor": "Run",
+    "Node.js.factor.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "Node.js.javaScript.js.executor": "Run",
+    "Node.js.javaSkript.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/user/WebstormProjects/testname",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Users/user/AppData/Roaming/JetBrains/WebStorm2025.1/node/versions/22.15.1/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\testname" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\testname" />
+      <recent name="C:\Users\user\WebstormProjects\testname\.idea" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="javaScript.js" type="NodeJSConfigurationType" singleton="false" path-to-node="$PROJECT_DIR$/../../../../Program Files/nodejs/node" path-to-js-file="javaSkript.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.javaScript.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d7f8542-fe54-45b6-baf0-fd255822268e" name="Changes" comment="" />
+      <created>1747482303436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747482303436</updated>
+      <workItem from="1747482304483" duration="4942000" />
+      <workItem from="1747487960250" duration="8000" />
+      <workItem from="1747488472133" duration="26000" />
+      <workItem from="1747488537792" duration="54000" />
+      <workItem from="1747499871976" duration="570000" />
+      <workItem from="1747500613837" duration="9000" />
+      <workItem from="1747500629717" duration="7000" />
+      <workItem from="1747500644733" duration="143000" />
+      <workItem from="1747500791970" duration="23000" />
+      <workItem from="1747500926329" duration="37000" />
+      <workItem from="1747500966906" duration="2000" />
+      <workItem from="1747501094123" duration="8000" />
+      <workItem from="1747501105173" duration="2000" />
+      <workItem from="1747501314495" duration="46000" />
+      <workItem from="1747548029406" duration="54000" />
+      <workItem from="1747550765042" duration="6000" />
+      <workItem from="1747837831460" duration="10000" />
+      <workItem from="1749318236868" duration="297000" />
+      <workItem from="1752737349390" duration="7000" />
+      <workItem from="1752737480188" duration="3000" />
+      <workItem from="1753536672934" duration="5000" />
+      <workItem from="1753536698881" duration="8000" />
+      <workItem from="1754292231156" duration="18000" />
+      <workItem from="1754467495864" duration="18113000" />
+      <workItem from="1754719008584" duration="6002000" />
+      <workItem from="1755016554227" duration="32000" />
+      <workItem from="1755177334236" duration="8000" />
+      <workItem from="1756023866775" duration="114000" />
+      <workItem from="1756024034947" duration="9000" />
+      <workItem from="1756028527671" duration="323000" />
+      <workItem from="1756028901438" duration="98000" />
+      <workItem from="1756029149112" duration="6490000" />
+      <workItem from="1756396734867" duration="40000" />
+      <workItem from="1756396783920" duration="9769000" />
+      <workItem from="1757088891214" duration="21868000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="location" language="JavaScript" />
+        <watch expression="location" language="JavaScript" />
+        <watch expression="location" language="JavaScript" />
+        <watch expression="fetch()" language="JavaScript" />
+        <watch expression="fetch()" language="JavaScript" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
