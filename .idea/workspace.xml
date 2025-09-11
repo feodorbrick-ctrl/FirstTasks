@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d7f8542-fe54-45b6-baf0-fd255822268e" name="Changes" comment="add first commit" />
+    <list default="true" id="4d7f8542-fe54-45b6-baf0-fd255822268e" name="Changes" comment="move tasks files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeleteDublicate.js" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteDublicate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parity.js" beforeDir="false" afterPath="$PROJECT_DIR$/Parity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascendingOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/AscendingOrder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factor.js" beforeDir="false" afterPath="$PROJECT_DIR$/Factor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbersAcc.js" beforeDir="false" afterPath="$PROJECT_DIR$/NumbersAcc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overTurning.js" beforeDir="false" afterPath="$PROJECT_DIR$/OverTurning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palindroms.js" beforeDir="false" afterPath="$PROJECT_DIR$/Palindroms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/returningBigerNumber.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReturningBigerNumber.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +31,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "searchQuery": "as",
+      "state": "OPEN",
+      "assignee": "feodorbrick-ctrl"
+    }
+  ],
+  "lastFilter": {
+    "searchQuery": "as",
+    "state": "OPEN",
+    "assignee": "feodorbrick-ctrl"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/feodorbrick-ctrl/FirstTasks.git",
@@ -39,7 +63,9 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.DeleteDublicate.js.executor": "Run",
     "Node.js.Parity.js.executor": "Run",
+    "Node.js.ReturningBigerNumber.js.executor": "Run",
     "Node.js.ascendingOrder.js.executor": "Run",
     "Node.js.factor.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
@@ -127,7 +153,7 @@
       <workItem from="1756029149112" duration="6490000" />
       <workItem from="1756396734867" duration="40000" />
       <workItem from="1756396783920" duration="9769000" />
-      <workItem from="1757088891214" duration="22213000" />
+      <workItem from="1757088891214" duration="24903000" />
     </task>
     <task id="LOCAL-00001" summary="add first commit">
       <option name="closed" value="true" />
@@ -137,7 +163,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757395175390</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="move tasks files">
+      <option name="closed" value="true" />
+      <created>1757395292970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757395292970</updated>
+    </task>
+    <task id="LOCAL-00003" summary="if">
+      <option name="closed" value="true" />
+      <created>1757593545502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757593545502</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +198,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="add first commit" />
+    <MESSAGE value="move tasks files" />
+    <MESSAGE value="if" />
+    <option name="LAST_COMMIT_MESSAGE" value="if" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

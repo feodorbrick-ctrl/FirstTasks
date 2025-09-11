@@ -1,3 +1,4 @@
+// first result
 function returnsBiggerNumber(firstNumber, secondNumber, thirdNumber) {
     let result
     if (firstNumber > secondNumber) {
@@ -13,7 +14,7 @@ function returnsBiggerNumber(firstNumber, secondNumber, thirdNumber) {
 }
 
 console.log(returnsBiggerNumber(4,5,6))
-
+// second result
 function returnsBiggerNumber2(firstNumber, secondNumber, thirdNumber) {
     let result = [firstNumber, secondNumber, thirdNumber]
     result.sort(function (a,b) {

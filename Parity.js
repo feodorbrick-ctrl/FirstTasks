@@ -15,4 +15,5 @@ console.log(Parity(3))
 function Parity2(number) {
     return number % 2 === 0
 }
+
 console.log(Parity2(3))
