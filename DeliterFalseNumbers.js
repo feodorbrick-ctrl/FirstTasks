@@ -8,4 +8,4 @@ function DeliterFalseNumbers(array) {
     return result
 }
 
-console.log(DeliterFalseNumbers([3,1,2,4]))
+console.log(DeliterFalseNumbers([3, 1, 2, 4]))
