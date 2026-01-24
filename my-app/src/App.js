@@ -3,28 +3,26 @@ import './styles/App.css'
 import PostList from "./components/PostList";
 import PostForm from "./components/PostForm";
 import PostFilter from "./components/PostFilter";
+import MyHeader from "./components/UI/header/MyHeader";
+import MyModal from "./components/UI/modal/MyModal";
+import MyButton from "./components/UI/button/MyButton";
+import {usePosts} from "./hooks/usePosts";
+import axios from "axios";
 
 function App() {
-    const [posts, setPosts] = useState([
-        {id: 1, title: 'b', body: 'c'},
-        {id: 2, title: 'a', body: 'd'},
-    ]);
+    const [posts, setPosts] = useState([]);
     const [filter, setFilter] = useState({sort:'', query:''});
-
-    const sortedPosts = useMemo(() => {
-        console.log(filter)
-        if (filter.sort) {
-            return [...posts].sort((a, b) => a[filter.sort].localeCompare(b[filter.sort]))
-        }
-        return posts;
-    },[filter.sort, posts]);
-
-    const sortedAndSearchedPosts = useMemo(() => {
-        return sortedPosts.filter(post => post.title.toLowerCase().includes(filter.query))
-    }, [sortedPosts, filter.query]);
+    const [modal, setModal] = useState(false);
+    const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
 
     const createPost = (newPost) => {
         setPosts([...posts, newPost]);
+        setModal(false);
+    }
+
+    const fetchPosts = async () => {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
+        setPosts(response.data);
     }
 
     const removePost = (post) => {
@@ -33,10 +31,14 @@ function App() {
 
     return (
         <div className='App'>
-            <div className='header__div'>
-                <h1 className='header__p'>PosTable</h1>
-            </div>
-            <PostForm create={createPost}/>
+            {/*<MyHeader/>*/}
+            <MyButton style={{marginRight: '20px'}} onClick={fetchPosts}>Get Posts</MyButton>
+            <MyButton style={{marginTop: '30px'}} onClick = {() => setModal(true)}>
+                Create Post
+            </MyButton>
+            <MyModal visible={modal} setVisible={setModal}>
+                <PostForm create={createPost}/>
+            </MyModal>
             <hr style={{margin: '20px'}}/>
             <PostFilter filter={filter} setFilter={setFilter}/>
             {sortedAndSearchedPosts.length !== 0
