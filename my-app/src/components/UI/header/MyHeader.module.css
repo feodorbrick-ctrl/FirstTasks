@@ -1,0 +1,17 @@
+.header__div {
+    position: relative;
+    left: 36%;
+    margin-bottom: 20px;
+    padding: 3%;
+    border-radius: 0 30px;
+    background-color: teal;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: -10px 10px 10px #e17120;
+    align-content: center;
+}
+
+.header__p {
+    color: lightskyblue;
+    font-weight: 800;
+}

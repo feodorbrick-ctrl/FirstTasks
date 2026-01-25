@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './MySelect.module.css'
 
 const MySelect = ({option, defaultValue, value,onChange}) => {
     return (
@@ -6,6 +7,7 @@ const MySelect = ({option, defaultValue, value,onChange}) => {
             <select
                 value={value}
                 onChange={event => onChange(event.target.value)}
+                className={classes.mySelect}
             >
                 <option disabled value=''>{defaultValue}</option>
                 {option.map(option =>
