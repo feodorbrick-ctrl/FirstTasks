@@ -4,14 +4,14 @@
     border-radius: 50%;
     border: 3px teal dashed;
     text-align: center;
-    animation: loader linear 2.5s infinite;
+    animation: loader linear 1s infinite;
 }
 
 @keyframes loader {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(2);
     }
 }
