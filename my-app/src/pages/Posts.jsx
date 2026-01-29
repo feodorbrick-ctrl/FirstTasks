@@ -12,6 +12,7 @@ import Loader from "../components/UI/loader/Loader";
 import {useFetching} from "../hooks/useFetching";
 import {getPageCount} from "../components/utils/pages";
 import Pagination from "../components/UI/pagination/pagination";
+import MyInput from "../components/UI/input/MyInput";
 
 function Posts() {
     const [posts, setPosts] = useState([]);
@@ -47,9 +48,13 @@ function Posts() {
     return (
         <div className='App'>
             {/*<MyHeader/>*/}
-            <MyButton style={{marginTop: '30px'}} onClick={() => setModal(true)}>
+            <MyButton style={{marginTop: '60px'}} onClick={() => setModal(true)}>
                 Create Post
             </MyButton>
+            <br/>
+            <MyInput value={limit} onChange={p => {
+                setLimit(p.value)
+            }}/>
             <MyModal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost}/>
             </MyModal>
