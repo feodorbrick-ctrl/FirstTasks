@@ -3,7 +3,6 @@ import '../styles/App.css'
 import PostList from "../components/PostList";
 import PostForm from "../components/PostForm";
 import PostFilter from "../components/PostFilter";
-// import MyHeader from "../components/UI/header/MyHeader";
 import MyModal from "../components/UI/modal/MyModal";
 import MyButton from "../components/UI/button/MyButton";
 import {usePosts} from "../hooks/usePosts";
@@ -47,8 +46,7 @@ function Posts() {
 
     return (
         <div className='App'>
-            {/*<MyHeader/>*/}
-            <MyButton style={{marginTop: '60px'}} onClick={() => setModal(true)}>
+            <MyButton onClick={() => setModal(true)}>
                 Create Post
             </MyButton>
             <br/>

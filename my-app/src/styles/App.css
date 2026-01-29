@@ -35,6 +35,10 @@
     align-items: center;
 }
 
+.post__btns {
+    display: flex;
+}
+
 .page__wrapper {
     width: 100%;
     margin-top: 20px;
@@ -61,9 +65,10 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
-    background: lightgrey;
+    background: lightskyblue;
 }
 
 .navbar__links {
     margin-left: auto;
+    margin-right: 50px;
 }

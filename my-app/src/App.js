@@ -1,28 +1,20 @@
-import React from 'react';
-import Navbar from "./components/UI/navbar/navbar";
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
-// Import your components
-import About from './pages/About';
-import Posts from './pages/Posts';
+import React, {useState} from 'react';
+import AppRouter from "./components/AppRouter";
+import { BrowserRouter } from 'react-router-dom';
+import {AuthContext} from "./context/context";
 
 const App = () => {
+    const [isAuth, setIsAuth] = useState(true);
     return (
-        <BrowserRouter>
-            <Navbar/>
-            <Routes>
-                <Route path="/about" element={<About />} />
-                <Route path="/posts" element={<Posts />} />
-                <Route path="/" element={<Home />} />
-                <Route path="*" element={<Navigate to='/' replace/>}/>
-            </Routes>
-        </BrowserRouter>
+        <AuthContext value={{
+            isAuth,
+            setIsAuth: setIsAuth
+        }}>
+            <BrowserRouter>
+                <AppRouter />
+            </BrowserRouter>
+        </AuthContext>
     )
 }
-
-// Add a Home component
-const Home = () => {
-    return <h2 style={{marginTop: '60px'}}>Домашняя страница</h2>;
-};
 
 export default App;
