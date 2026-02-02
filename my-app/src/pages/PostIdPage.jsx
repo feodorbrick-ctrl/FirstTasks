@@ -33,7 +33,7 @@ const PostIdPage = () => {
             {isComLoading
                 ? <Loader />
                 : <div>{comments.map(comm =>
-                    <div style={{marginTop: "20px", border: "3px solid teal", padding: "20px"}}>
+                    <div style={{marginTop: "20px", border: "3px solid teal", padding: "20px"}} key={comm.id}>
                         <img src="https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur.png" width='30px' height='30px' alt="user:"/>
                         <br/>
                         <a href='/'>{comm.email}</a>

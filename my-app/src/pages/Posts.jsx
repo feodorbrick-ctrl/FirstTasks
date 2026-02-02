@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef  } from 'react';
 import '../styles/App.css'
 import PostList from "../components/PostList";
 import PostForm from "../components/PostForm";
@@ -11,7 +11,8 @@ import Loader from "../components/UI/loader/Loader";
 import {useFetching} from "../hooks/useFetching";
 import {getPageCount} from "../components/utils/pages";
 import Pagination from "../components/UI/pagination/pagination";
-import MyInput from "../components/UI/input/MyInput";
+import {useObserver} from "../hooks/useObserver";
+import MySelect from "../components/UI/select/MySelect";
 
 function Posts() {
     const [posts, setPosts] = useState([]);
@@ -23,13 +24,19 @@ function Posts() {
     const [page, setPage] = useState(1);
     const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
         const response = await PostService.getAll(limit, page)
-        setPosts(response.data);
+        setPosts([...posts, ...response.data]);
         const totalCount = response.headers['x-total-count'];
         setTotalPages(getPageCount(totalCount, limit));
     })
+    const lastElement = useRef()
+
+    useObserver(lastElement, page < totalPages, isPostsLoading, () => {
+        setPage(page + 1);
+    });
+
     useEffect(() => {
-        fetchPosts();
-    }, [page])
+        fetchPosts(page);
+    }, [page, limit])
 
     const createPost = (newPost) => {
         setPosts([...posts, newPost]);
@@ -50,14 +57,23 @@ function Posts() {
                 Create Post
             </MyButton>
             <br/>
-            <MyInput value={limit} onChange={p => {
-                setLimit(p.value)
-            }}/>
             <MyModal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost}/>
             </MyModal>
             <hr style={{margin: '20px'}}/>
             <PostFilter filter={filter} setFilter={setFilter}/>
+            <MySelect
+                value={limit}
+                onChange={value => setLimit(value)}
+                defaultValue='quanity of elements on page'
+                option={[
+                    {value: 5, name: '5'},
+                    {value: 10, name: '10'},
+                    {value: 25, name: '25'},
+                    {value: 50, name: '50'},
+                    {value: -1, name: 'all'},
+                ]}
+            />
             {postError &&
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <h1 style={{width: '400px'}}>
@@ -65,13 +81,15 @@ function Posts() {
                         : `{postError}`</h1>
                 </div>
             }
-            {isPostsLoading
-                ? <div style={{display: 'flex', justifyContent: 'center'}}><Loader/></div>
-                : <PostList remove={removePost} posts={sortedAndSearchedPosts} title='Posts of JS'/>
+            <PostList remove={removePost} posts={sortedAndSearchedPosts} title='Posts of JS'/>
+            <div ref={lastElement}/>
+            {isPostsLoading &&
+                <div style={{display: 'flex', justifyContent: 'center'}}><Loader/></div>
             }
             <Pagination
                 totalPages={totalPages}
                 page={page}
+                setPosts={setPosts}
                 changePage={changePage}
             />
         </div>

@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import MyInput from "../components/UI/input/MyInput";
 import MyButton from "../components/UI/button/MyButton";
+import {AuthContext} from "../context/context";
 
 const Login = () => {
+const {setIsAuth} = useContext(AuthContext)
+
+    const login =  event => {
+        event.preventDefault();
+        setIsAuth(true);
+        localStorage.setItem('auth', 'true');
+    }
+
     return (
         <div>
             <h1>Page of Login</h1>
-            <form>
+            <form onSubmit={login}>
                 <MyInput type="text" placeholder='Enter login ' />
                 <MyInput type='password' placeholder='Enter password ' />
-                <MyButton>Sing in</MyButton>
+                <MyButton>Sign in</MyButton>
             </form>
         </div>
     );
