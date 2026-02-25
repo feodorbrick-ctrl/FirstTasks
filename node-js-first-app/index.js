@@ -1,21 +1,13 @@
-const http = require('http')
-const eventEmitter = require('events')
 const PORT = process.env.PORT || 5001;
-const Router = require('./frameworks/Router')
-const Emitter = require('./frameworks/Application')
+const Application = require('./frameworks/Application')
+const userRouter = require('./src/user_router')
+const jsonParser = require('./frameworks/parseJson')
+const parseUrl = require('./frameworks/parseUrl')
 
-const app = new Emitter()
+const app = new Application()
 
-const router = new Router()
-
-router.get('/users', (req, res) => {
-    res.end('You send request to /Users')
-})
-
-router.get('/posts', (req, res) => {
-    res.end('You send request to /Post')
-})
-
-app.addRouter(router)
+app.use(jsonParser)
+app.use(parseUrl('http://localhost:5001'))
+app.addRouter(userRouter)
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
